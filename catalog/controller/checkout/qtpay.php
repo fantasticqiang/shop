@@ -81,7 +81,7 @@ class ControllerCheckoutQtpay extends Controller {
 			/*****生成请求内容**结束*****/
 			
 			$def_url =  '<div style="text-align:center">';
-			$def_url .= '<body onLoad="//document.ipspay.submit();">网银订单确认';
+			$def_url .= '<body onLoad="document.ipspay.submit();">网银订单确认';
 			$def_url .= '<form name="ipspay" action="'.$GLOBALS['gateway_url2'].'" method="post">';
 			$def_url .=	'<input name="msg" type="hidden" value="'.$msg.'" /><input type="submit" value="提交"/>';
 			$def_url .=	'</form></div>';
