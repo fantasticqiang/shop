@@ -22,7 +22,7 @@ function sign($data) {
  */  
 function verity($data,$signature)  
 {  
-	$pubKey = file_get_contents("./server_cert.cer");  
+	$pubKey = file_get_contents(__DIR__."/server_cert.cer");
 	$res = openssl_get_publickey($pubKey);  
 	$result = (bool)openssl_verify($data, base64_decode($signature), $res);  
 	openssl_free_key($res);

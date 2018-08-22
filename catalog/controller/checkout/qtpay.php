@@ -53,11 +53,11 @@ class ControllerCheckoutQtpay extends Controller {
 			unset($this->session->data['totals']);
 			// 获取订单数据
 			$this->load->model('checkout/order');
-			$this->load->model('payment/alipay_direct');
+			//$this->load->model('payment/alipay_direct');
 
-			$order_id = $this->session->data['order_id'];		
+			$order_id = $activity_data['order_id'];
 			$order_info = $this->model_checkout_order->getOrder($order_id);
-			$order_product_info = $this->model_payment_alipay_direct->getOrderProduct($order_id);
+			//$order_product_info = $this->model_payment_alipay_direct->getOrderProduct($order_id);
 			$merchantId = "1000000";//商户号
 			$merchantOrderId = $activity_data['order_id'];//订单号
 			$price = intval($order_info['total']*100);//金额
