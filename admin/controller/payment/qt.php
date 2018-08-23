@@ -25,6 +25,7 @@ class ControllerPaymentQt extends Controller {
 		$data['text_all_zones'] = $this->language->get('text_all_zones');
 
 		$data['entry_order_status'] = $this->language->get('entry_order_status');
+        $data['entry_failed_status'] = $this->language->get('entry_failed_status');
 		$data['entry_total'] = $this->language->get('entry_total');
 		$data['entry_geo_zone'] = $this->language->get('entry_geo_zone');
 		$data['entry_status'] = $this->language->get('entry_status');

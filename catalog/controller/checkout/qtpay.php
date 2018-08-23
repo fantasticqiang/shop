@@ -62,7 +62,11 @@ class ControllerCheckoutQtpay extends Controller {
 			$merchantOrderId = $activity_data['order_id'];//订单号
 			$price = intval($order_info['total']*100);//金额
 			$notifyUrl = "http://39.104.104.16:8080/ff.jsp";
+            $payCallBack = "http://192.168.1.90/index.php?route=payment/qt/notify"; //支付完成后回调本网站处理订单
 			//必填r，订单时间
+            //测试的时候把这个替换：merchantFrontEndUrl="https://127.0.0.1:8443/pay-interface/order_request.jsp"
+            //成：merchantFrontEndUrl="'.$payCallBack.'"
+            //为了跳过外网的支付流程，生产测试时，在替换过了来，就可以
 			$orderTime = date("YmdHis");
 			$str=  '<?xml version="1.0" encoding="utf-8" standalone="no"?>
 				<message accountType="0" application="SubmitOrder" bankId="" bizType="" credentialNo="" credentialType="" guaranteeAmt="0" 
