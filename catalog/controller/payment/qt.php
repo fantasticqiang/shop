@@ -38,6 +38,8 @@ class ControllerPaymentQt extends Controller {
         fwrite($myfile, $resp_xml);
         $resp_sign = $tmp[1];
 
+        //修改订单装态
+        $this->load->model('checkout/order');
         //获取订单号,具体看request参数,在做修改
         $orderXmlObj = simplexml_load_string($resp_xml);
         $orderXmlArr = json_decode(json_encode($orderXmlObj),true);
@@ -46,9 +48,6 @@ class ControllerPaymentQt extends Controller {
         if(verity(MD5($resp_xml,true),$resp_sign)){//验签
             echo '<br/>响应结果<br/><textarea cols="120" rows="20">'.$resp_xml.'</textarea>';
             fwrite($myfile, '<br/>响应结果<br/><textarea cols="120" rows="20">'.$resp_xml.'</textarea>');
-            //修改订单装态
-
-            $this->load->model('checkout/order');
 
             //测试数据，执行ok，可以修改状态，可以添加历史订单
             //$this->model_checkout_order->addOrderHistory('18', $this->config->get('qt_order_status_id'));
