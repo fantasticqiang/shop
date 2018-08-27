@@ -1,5 +1,7 @@
 <?php
 $gateway_url="http://123.56.119.177:8081/pay/pay.htm";
+
+
 /**
  * 签名  生成签名串  基于sha1withRSA
  * @param string $data 签名前的字符串
@@ -20,7 +22,7 @@ function sign($data) {
  * @param signature：签名 
  * @return bool 返回：签名结果，true为验签成功，false为验签失败 
  */  
-function verity($data,$signature)  
+function verify($data,$signature)
 {  
 	$pubKey = file_get_contents(__DIR__."/server_cert.cer");
 	$res = openssl_get_publickey($pubKey);  
@@ -28,4 +30,3 @@ function verity($data,$signature)
 	openssl_free_key($res);
 	return $result;  
 }
-?>

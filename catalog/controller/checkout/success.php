@@ -1,5 +1,7 @@
 <?php
+
 class ControllerCheckoutSuccess extends Controller {
+
 	public function index() {
 		$this->load->language('checkout/success');
 
