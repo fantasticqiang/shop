@@ -12,7 +12,7 @@ $str=  '<?xml version="1.0" encoding="utf-8" standalone="no"?>
 	application="NotifyOrder" 
 	version="1.0.1"
 	merchantId="1000001" 
-	merchantOrderId="1000011651">
+	merchantOrderId="1000011668">
 	<deductList>
 		<item
 			payOrderId="pxQoal02Q3rKTOI"

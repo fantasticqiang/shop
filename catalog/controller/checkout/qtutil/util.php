@@ -36,6 +36,7 @@ function sign($data) {
 	openssl_sign($data, $signature, $certs['pkey']);
 	return base64_encode($signature);
 }
+
 /**
  * 验证签名： 
  * @param data：原文 
@@ -43,10 +44,18 @@ function sign($data) {
  * @return bool 返回：签名结果，true为验签成功，false为验签失败 
  */  
 function verify($data,$signature)
-{  
-	$pubKey = file_get_contents(__DIR__."/server_cert.cer");
-	$res = openssl_get_publickey($pubKey);  
-	$result = (bool)openssl_verify($data, base64_decode($signature), $res);  
-	openssl_free_key($res);
-	return $result;  
+{
+    $pubKey = file_get_contents(__DIR__."/server_cert.cer");
+    $res = openssl_get_publickey($pubKey);
+    $result = (bool)openssl_verify($data, base64_decode($signature), $res);
+    openssl_free_key($res);
+    return $result;
+}
+function verify2($data,$signature)
+{
+    $pubKey = file_get_contents(__DIR__."/merchant_cert.cer");
+    $res = openssl_get_publickey($pubKey);
+    $result = (bool)openssl_verify($data, base64_decode($signature), $res);
+    openssl_free_key($res);
+    return $result;
 }

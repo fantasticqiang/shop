@@ -105,3 +105,335 @@
 2018-08-31 15:10:34 - PHP Notice:  Undefined variable: qt_express_failed_status_id in D:\phpStudy\WWW\shop\admin\view\template\payment\qt.tpl on line 53
 2018-08-31 15:10:34 - PHP Notice:  Undefined variable: qt_express_failed_status_id in D:\phpStudy\WWW\shop\admin\view\template\payment\qt.tpl on line 53
 2018-08-31 15:10:34 - PHP Notice:  Undefined variable: qt_express_failed_status_id in D:\phpStudy\WWW\shop\admin\view\template\payment\qt.tpl on line 53
+2018-08-31 15:26:53 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:28:47 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY1MSI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|Ctx3W7Ig+8luxyuvR7gIRR+/ThEBDypMDK1GBYh9iWn7aK0uUPnIZzhEYiJtvgWAR9/BH1RoZZ8zbDKmDrsdEHTXZJQqQh+l2BLgm1mS9zwB8KF62fDUsK9Klf3Bz4W0frb1Hm7FjpXyQ6w4ueZm4LKSXOZXqsJUk+P4AnvkLaT8FqmJQ2Jwf5lhpDVCX6J3XH7C/krsLYh3DwVz9ylm4KMiyNX1sjS/SC7SZEvM1wivQ+WH8aaPhVhuEBi7WdGtQwPkappBHPQEOdXibdZ5GPm78ULH7nvyjJPiUY4j1NTkm+Q1O5mHyVlP7yYvnbzpJd7ACFRyRcwTGMq0fPQNhA==
+2018-08-31 15:28:47 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011651">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:28:47 - 签名：Ctx3W7Ig+8luxyuvR7gIRR+/ThEBDypMDK1GBYh9iWn7aK0uUPnIZzhEYiJtvgWAR9/BH1RoZZ8zbDKmDrsdEHTXZJQqQh+l2BLgm1mS9zwB8KF62fDUsK9Klf3Bz4W0frb1Hm7FjpXyQ6w4ueZm4LKSXOZXqsJUk+P4AnvkLaT8FqmJQ2Jwf5lhpDVCX6J3XH7C/krsLYh3DwVz9ylm4KMiyNX1sjS/SC7SZEvM1wivQ+WH8aaPhVhuEBi7WdGtQwPkappBHPQEOdXibdZ5GPm78ULH7nvyjJPiUY4j1NTkm+Q1O5mHyVlP7yYvnbzpJd7ACFRyRcwTGMq0fPQNhA==
+2018-08-31 15:28:47 - 商户订单号：1000011651
+2018-08-31 15:28:47 - 验签错误：1000011651
+2018-08-31 15:28:48 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:29:33 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|FGu+FFhSSosSip1rlAXd+UE/LD0viSgyWYxmaIJF7OU7R6UpoPgB0HGdLoJg+/XkBPJoIcI6/CNlxXgyrm6CPnMKgsVsyAspJqVjBo+qqJD073JEEq7WgucRReHDDQLwgh6sr8hoFXj2faqUZFdd3kfNWyijFvtWLH01V3mxvsnza9KujWNWviIHNjWb1fN3LsHX0cIGU5F+wVfGhyEevkyqGO+lHGVUjSW2Djt5xbQs3UgBiSWzRixPU1QIfVe7h44Xcx0LwarxgAzcJNnr9onxj7hSzQzKW/z7q6WdG1L28iBN+mIOpsw1KvvzFVLln3Rv+MRgHlxl6gWIhbqw5Q==
+2018-08-31 15:29:33 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:29:33 - 签名：FGu+FFhSSosSip1rlAXd+UE/LD0viSgyWYxmaIJF7OU7R6UpoPgB0HGdLoJg+/XkBPJoIcI6/CNlxXgyrm6CPnMKgsVsyAspJqVjBo+qqJD073JEEq7WgucRReHDDQLwgh6sr8hoFXj2faqUZFdd3kfNWyijFvtWLH01V3mxvsnza9KujWNWviIHNjWb1fN3LsHX0cIGU5F+wVfGhyEevkyqGO+lHGVUjSW2Djt5xbQs3UgBiSWzRixPU1QIfVe7h44Xcx0LwarxgAzcJNnr9onxj7hSzQzKW/z7q6WdG1L28iBN+mIOpsw1KvvzFVLln3Rv+MRgHlxl6gWIhbqw5Q==
+2018-08-31 15:29:33 - 商户订单号：1000011668
+2018-08-31 15:29:33 - 验签错误：1000011668
+2018-08-31 15:29:34 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:34:29 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 15:34:29 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:34:29 - 签名：
+2018-08-31 15:34:29 - 商户订单号：1000011668
+2018-08-31 15:34:29 - 验签错误：1000011668
+2018-08-31 15:34:30 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:36:21 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 15:36:21 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:36:21 - 签名：
+2018-08-31 15:36:21 - 商户订单号：1000011668
+2018-08-31 15:36:21 - 验签错误：1000011668
+2018-08-31 15:36:22 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:37:32 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 15:37:32 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:37:32 - 签名：
+2018-08-31 15:37:32 - 商户订单号：1000011668
+2018-08-31 15:37:32 - 验签错误：1000011668
+2018-08-31 15:37:33 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:37:59 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 15:37:59 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:37:59 - 签名：
+2018-08-31 15:37:59 - 商户订单号：1000011668
+2018-08-31 15:37:59 - 验签错误：1000011668
+2018-08-31 15:38:00 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:40:05 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 15:40:05 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:40:05 - 签名：
+2018-08-31 15:40:05 - 商户订单号：1000011668
+2018-08-31 15:40:05 - 验签错误：1000011668
+2018-08-31 15:40:06 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:42:02 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 15:42:02 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:42:02 - 签名：
+2018-08-31 15:42:02 - 商户订单号：1000011668
+2018-08-31 15:42:02 - 验签错误：1000011668
+2018-08-31 15:42:03 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:43:26 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 15:43:26 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:43:26 - 签名：
+2018-08-31 15:43:26 - 商户订单号：1000011668
+2018-08-31 15:43:26 - 验签错误：1000011668
+2018-08-31 15:43:27 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:43:50 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 15:43:50 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:43:50 - 签名：
+2018-08-31 15:43:50 - 商户订单号：1000011668
+2018-08-31 15:43:50 - 验签错误：1000011668
+2018-08-31 15:43:51 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:44:13 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 15:44:13 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:44:13 - 签名：
+2018-08-31 15:44:13 - 商户订单号：1000011668
+2018-08-31 15:44:13 - 验签错误：1000011668
+2018-08-31 15:44:14 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 15:45:28 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 15:45:28 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 15:45:28 - 签名：
+2018-08-31 15:45:28 - 商户订单号：1000011668
+2018-08-31 15:45:28 - 验签错误：1000011668
+2018-08-31 15:45:29 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 16:03:32 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 16:03:32 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 16:03:32 - 签名：
+2018-08-31 16:03:32 - 商户订单号：1000011668
+2018-08-31 16:03:32 - 验签错误：1000011668
+2018-08-31 16:03:33 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 16:03:44 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|
+2018-08-31 16:03:44 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 16:03:44 - 签名：
+2018-08-31 16:03:45 - 商户订单号：1000011668
+2018-08-31 16:03:45 - 验签错误：1000011668
+2018-08-31 16:03:46 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 16:06:48 - 接收到钱通发来异步通知：PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8bWVzc2FnZSANCglhcHBsaWNhdGlvbj0iTm90aWZ5T3JkZXIiIA0KCXZlcnNpb249IjEuMC4xIg0KCW1lcmNoYW50SWQ9IjEwMDAwMDEiIA0KCW1lcmNoYW50T3JkZXJJZD0iMTAwMDAxMTY2OCI+DQoJPGRlZHVjdExpc3Q+DQoJCTxpdGVtDQoJCQlwYXlPcmRlcklkPSJweFFvYWwwMlEzcktUT0kiDQoJCQlwYXlBbXQ9IjEwMDAiDQoJCQlwYXlTdGF0dXM9IjAxIg0KCQkJcGF5RGVzYz0i5LuY5qy+5oiQ5YqfIiANCgkJCXBheVRpbWU9IjIwMTUxMjI1MTEwMDQ2Ii8+DQoJPC9kZWR1Y3RMaXN0Pg0KCTxyZWZ1bmRMaXN0Lz4NCjwvbWVzc2FnZT4=|FGu+FFhSSosSip1rlAXd+UE/LD0viSgyWYxmaIJF7OU7R6UpoPgB0HGdLoJg+/XkBPJoIcI6/CNlxXgyrm6CPnMKgsVsyAspJqVjBo+qqJD073JEEq7WgucRReHDDQLwgh6sr8hoFXj2faqUZFdd3kfNWyijFvtWLH01V3mxvsnza9KujWNWviIHNjWb1fN3LsHX0cIGU5F+wVfGhyEevkyqGO+lHGVUjSW2Djt5xbQs3UgBiSWzRixPU1QIfVe7h44Xcx0LwarxgAzcJNnr9onxj7hSzQzKW/z7q6WdG1L28iBN+mIOpsw1KvvzFVLln3Rv+MRgHlxl6gWIhbqw5Q==
+2018-08-31 16:06:48 - 通知原文：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 16:06:48 - 签名：FGu+FFhSSosSip1rlAXd+UE/LD0viSgyWYxmaIJF7OU7R6UpoPgB0HGdLoJg+/XkBPJoIcI6/CNlxXgyrm6CPnMKgsVsyAspJqVjBo+qqJD073JEEq7WgucRReHDDQLwgh6sr8hoFXj2faqUZFdd3kfNWyijFvtWLH01V3mxvsnza9KujWNWviIHNjWb1fN3LsHX0cIGU5F+wVfGhyEevkyqGO+lHGVUjSW2Djt5xbQs3UgBiSWzRixPU1QIfVe7h44Xcx0LwarxgAzcJNnr9onxj7hSzQzKW/z7q6WdG1L28iBN+mIOpsw1KvvzFVLln3Rv+MRgHlxl6gWIhbqw5Q==
+2018-08-31 16:06:48 - 商户订单号：1000011668
+2018-08-31 16:06:48 - 响应结果：<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<message 
+	application="NotifyOrder" 
+	version="1.0.1"
+	merchantId="1000001" 
+	merchantOrderId="1000011668">
+	<deductList>
+		<item
+			payOrderId="pxQoal02Q3rKTOI"
+			payAmt="1000"
+			payStatus="01"
+			payDesc="付款成功" 
+			payTime="20151225110046"/>
+	</deductList>
+	<refundList/>
+</message>
+2018-08-31 16:06:49 - PHP Warning:  mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\WWW\shop\system\library\mail.php on line 158
+2018-08-31 16:06:49 - 修改订单状态：addOrderHistory(1000011668, 5,'',true)
