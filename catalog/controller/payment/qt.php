@@ -32,6 +32,8 @@ class ControllerPaymentQt extends Controller {
         $resp_sign = $tmp[1];
         $this->log->write("签名：".$resp_sign);
 
+        //修改订单装态
+        $this->load->model('checkout/order');
         //获取订单号,具体看request参数,在做修改
         $orderXmlObj = simplexml_load_string($resp_xml);
         $orderXmlArr = json_decode(json_encode($orderXmlObj),true);
@@ -43,7 +45,6 @@ class ControllerPaymentQt extends Controller {
             //修改订单装态
             $this->load->model('checkout/order');
             //测试数据，执行ok，可以修改状态，可以添加历史订单
-
             $this->model_checkout_order->addOrderHistory($order_id, 5,'',true);
             $this->log->write("修改订单状态：addOrderHistory($order_id, 5,'',true)");
             $this->response->redirect($this->url->link('checkout/success'));
