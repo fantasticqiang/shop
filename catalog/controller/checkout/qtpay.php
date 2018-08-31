@@ -1,23 +1,21 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>online pay</title>
+    <meta charset="utf-8">
+    <title>online pay</title>
 </head>
 
 <body>
 <?php
 include 'qtutil/util.php';
-global $gateway_url2;
-$gateway_url2 = $gateway_url;
 
 class ControllerCheckoutQtpay extends Controller {
-	
-	public function index() {
+
+    public function index() {
         $this->load->language('checkout/success');
 
         if (isset($this->session->data['order_id'])) {
-            $this->cart->clear();
+            //$this->cart->clear();
 
             // Add to activity log
             $this->load->model('account/activity');
@@ -25,14 +23,14 @@ class ControllerCheckoutQtpay extends Controller {
             if ($this->customer->isLogged()) {
                 $activity_data = array(
                     'customer_id' => $this->customer->getId(),
-                    'name'        => $this->customer->getFirstName() . ' ' . $this->customer->getLastName(),
+                    'name'        => $this->customer->getFirstName(),
                     'order_id'    => $this->session->data['order_id']
                 );
 
                 $this->model_account_activity->addActivity('order_account', $activity_data);
             } else {
                 $activity_data = array(
-                    'name'     => $this->session->data['guest']['firstname'] . ' ' . $this->session->data['guest']['lastname'],
+                    'name'     => $this->session->data['guest']['firstname'],
                     'order_id' => $this->session->data['order_id']
                 );
 
@@ -51,52 +49,46 @@ class ControllerCheckoutQtpay extends Controller {
             unset($this->session->data['voucher']);
             unset($this->session->data['vouchers']);
             unset($this->session->data['totals']);
+            // 获取订单数据
+            $this->load->model('checkout/order');
+            //$this->load->model('payment/alipay_direct');
+
+            $order_id = $activity_data['order_id'];
+            $order_info = $this->model_checkout_order->getOrder($order_id);
+            global $merchantId;
+            global $notifyUrl;
+            $merchantOrderId = $activity_data['order_id'];//订单号
+            $price = intval($order_info['total']*100);//金额
+
+            //必填r，订单时间
+            //测试的时候把这个替换：merchantFrontEndUrl="https://127.0.0.1:8443/pay-interface/order_request.jsp"
+            //成：merchantFrontEndUrl="'.$payCallBack.'"
+            //为了跳过外网的支付流程，生产测试时，在替换过了来，就可以
+            $orderTime = date("YmdHis");
+            $str=  '<?xml version="1.0" encoding="utf-8" standalone="no"?>
+				<message accountType="0" application="SubmitOrder" bankId="" bizType="" credentialNo="" credentialType="" guaranteeAmt="0" 
+				merchantFrontEndUrl="https://127.0.0.1:8443/pay-interface/order_request.jsp"
+				merchantId="'.$GLOBALS['merchant_no'].'" merchantOrderAmt="' .$price. '" merchantOrderDesc="online pay" merchantOrderId="'.$merchantOrderId.'" 
+				merchantPayNotifyUrl="'.$GLOBALS['notifyUrl'].'" msgExt="" orderTime="'.$orderTime.'" payMode="0" 
+				payerId="" rptType="1" salerId="" userMobileNo="13333333333" userName="" userType="1" version="1.0.1"/>';
+
+
+            /*****生成请求内容**开始*****/
+            $strMD5 =  MD5($str,true);
+            $strsign = sign($strMD5);
+            $base64_src=base64_encode($str);
+            $msg = $base64_src."|".$strsign;
+
+            /*****生成请求内容**结束*****/
+
+            $def_url =  '<div style="text-align:center">';
+            $def_url .= '<body onLoad="document.ipspay.submit();">gateway submit';
+            //$def_url .= '<body >gateway submit';
+            $def_url .= '<form name="ipspay" action="'.$GLOBALS['gateway_url'].'" method="post">';
+            $def_url .=	'<input name="msg" type="hidden" value="'.$msg.'" /><input type="submit" value="submit"/>';
+            $def_url .=	'</form></div>';
+            echo $def_url;
+
         }
-
-        $this->document->setTitle($this->language->get('heading_title'));
-
-        $data['breadcrumbs'] = array();
-
-        $data['breadcrumbs'][] = array(
-            'text' => $this->language->get('text_home'),
-            'href' => $this->url->link('common/home')
-        );
-
-        $data['breadcrumbs'][] = array(
-            'text' => $this->language->get('text_basket'),
-            'href' => $this->url->link('checkout/cart')
-        );
-
-        $data['breadcrumbs'][] = array(
-            'text' => $this->language->get('text_checkout'),
-            'href' => $this->url->link('checkout/checkout', '', true)
-        );
-
-        $data['breadcrumbs'][] = array(
-            'text' => $this->language->get('text_success'),
-            'href' => $this->url->link('checkout/success')
-        );
-
-        $data['heading_title'] = $this->language->get('heading_title');
-
-        if ($this->customer->isLogged()) {
-            $data['text_message'] = sprintf($this->language->get('text_customer'), $this->url->link('account/account', '', true), $this->url->link('account/order', '', true), $this->url->link('account/download', '', true), $this->url->link('information/contact'));
-        } else {
-            $data['text_message'] = sprintf($this->language->get('text_guest'), $this->url->link('information/contact'));
-        }
-
-        $data['button_continue'] = $this->language->get('button_continue');
-
-        $data['continue'] = $this->url->link('common/home');
-
-        $data['column_left'] = $this->load->controller('common/column_left');
-        $data['column_right'] = $this->load->controller('common/column_right');
-        $data['content_top'] = $this->load->controller('common/content_top');
-        $data['content_bottom'] = $this->load->controller('common/content_bottom');
-        $data['footer'] = $this->load->controller('common/footer');
-        $data['header'] = $this->load->controller('common/header');
-
-        $this->response->setOutput($this->load->view('common/success', $data));
-	}
-
+    }
 }

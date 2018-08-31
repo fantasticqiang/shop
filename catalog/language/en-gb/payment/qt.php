@@ -1,3 +1,3 @@
 <?php
 // Text
-$_['text_title'] = '银联支付';
+$_['text_title'] = '钱通支付';
